@@ -1,0 +1,112 @@
+.site_container{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-image:url("https://static.wixstatic.com/media/b4b718_a0f5968aa18e41999b880dca06e054c1~mv2.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:50% 50%;
+    z-index: -1;
+}
+.title_bar{
+    width: 100%;
+    height: 81px;
+    margin-top: 62px;
+    margin-bottom: 60px;
+    background-color: #000000B0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meau_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.meau{
+    width: 840px;
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+}
+.meau_element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 79px;
+    height: 30px;
+    font-size: 12px;
+    font-family:"open sans", sans-serif;
+    cursor: pointer;
+}
+.split_line{
+    width: 1px;
+    height: 30px;
+    background-color: white;
+}
+.apluslogo{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.apluslogo>img{
+    width: 124px;
+    height: 124px;
+}
+.foot1{
+    margin-top: 44px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 17.5px;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.8;
+}
+.foot2{
+    width: 100%;
+    height: 105px;
+    background-color: #000000B0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.foot2_1{
+    width: 970px;
+    height: 105px;
+    display: flex;
+    flex-direction:row;
+}
+.foot2_1_1{
+    margin-top: 31px;
+    height: 16.5px;
+    width: 600px;
+    margin-bottom: 51px;
+    font-size: 12px;
+}
+.foot2_1_2{
+    margin-top: 26px;
+    height: 20px;
+    width: 370px;
+    margin-bottom: 59px;
+    display: flex;
+    flex-direction:row;
+    justify-content:right;
+}
+.foot3{
+    width: 100%;
+    height: 81px;
+}
+
+nav{
+    position: relative;
+    display: flex;
+    flex-wrap:wrap;
+}
