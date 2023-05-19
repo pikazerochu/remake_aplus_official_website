@@ -144,6 +144,7 @@
         .text_title{
             font-weight: bold;
             font-size: 16px;
+            height: 24px;
         }
         .text_para{
             margin-top: 5px;
@@ -151,8 +152,13 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            flex-direction: column;
             color: white;
             font-size: 16px;
+        }
+        .text_line{
+            height: 24px;
+            text-align: center;
         }
         .logos_container>img{
             width: 252px;
@@ -261,11 +267,11 @@
                     A+TEAM 簡述
                 </div>
                 <div class="text_para">
-                    有別於傳統直銷，A+TEAM成員並不主動銷售商品。</br>
-                    透由A+TEAM的獨家技術（含教育、經營理念與科技資源）來分享會員卡權益制度。</br>
-                    </br>
-                    全員致力於分享，讓身邊的人在原有的日常用品市場外多一項選擇，</br>
-                    透過推廣理經營念和對我們的認識，架構一個自然的日常用品消費網。</br>
+                    <div class="text_line">有別於傳統直銷，A+TEAM成員並不主動銷售商品。</div>
+                    <div class="text_line">透由A+TEAM的獨家技術（含教育、經營理念與科技資源）來分享會員卡權益制度。</div>
+                    <div class="text_line"></div>
+                    <div class="text_line">全員致力於分享，讓身邊的人在原有的日常用品市場外多一項選擇，</div>
+                    <div class="text_line">透過推廣理經營念和對我們的認識，架構一個自然的日常用品消費網。</div>
                 </div>
                 <div style="width: 592px;height: 35px;"></div>
                 <div style="width: 592px;height: 1px;background-color: white;"></div>
@@ -274,15 +280,15 @@
                     A+TEAM 創辦人理念
                 </div>
                 <div class="text_para">
-                    一般人終其一生都是自私的​，而人的動力只有兩種，痛苦想要脫離、快樂想要進取。</br>
-                    由於環境、教育背景、家庭因素、個人際遇等等的不同，造成了苦樂認識上的落差。</br>
-                    </br>
-                    「人類升、沉的樞紐在教育」</br>
-                    而教育的核心在善於改變自己的起心動念。</br>
-                    </br>
-​                    我們的目的就是透過A+深見的教育、A+廣行來歷事練心及A+律的自我努力。</br>
-                    將原本自私的人變成一個願意照顧周遭人的人。</br>
-                    秉持著 ”A lifetime spent helping people succeed is a good life.”</br>
+                    <div class="text_line">一般人終其一生都是自私的​，而人的動力只有兩種，痛苦想要脫離、快樂想要進取。</div>
+                    <div class="text_line">由於環境、教育背景、家庭因素、個人際遇等等的不同，造成了苦樂認識上的落差。</div>
+                    <div class="text_line"></div>
+                    <div class="text_line">「人類升、沉的樞紐在教育」</div>
+                    <div class="text_line">而教育的核心在善於改變自己的起心動念。</div>
+                    <div class="text_line"></div>
+​                    <div class="text_line">我們的目的就是透過A+深見的教育、A+廣行來歷事練心及A+律的自我努力。</div>
+                    <div class="text_line">將原本自私的人變成一個願意照顧周遭人的人。</div>
+                    <div class="text_line">秉持著 ”A lifetime spent helping people succeed is a good life.”</div>
                 </div>
             </div>
         </div>
@@ -322,6 +328,9 @@
     });
 
     var contact_us = document.getElementById("contact_us")
+    contact_us.addEventListener('click',function(){
+        window.location.assign('apply.html')
+    });
     contact_us.addEventListener('mouseover',function(){
         contact_us.style.color = "#efdd8d"
     });
