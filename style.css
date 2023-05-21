@@ -33,6 +33,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
+    position: relative;
     
 }
 .meau_element{
@@ -44,6 +45,44 @@
     font-size: 12px;
     font-family:"open sans", sans-serif;
     cursor: pointer;
+}
+.aplus_training_dropmeau{
+    position: absolute;
+    width: 79px;
+    right:158px;
+    top:30px;
+    padding-top: 10px;
+    background-color: #00000050;
+    display: none;
+}
+.aplus_tools_dropmeau{
+    position: absolute;
+    width: 150px;
+    right:78px;
+    top:30px;
+    padding-top: 10px;
+    background-color: #00000050;
+    display: none;
+}
+.aplus_training_subelement{
+    height: 30px;
+    width: 79px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.aplus_tools_subelement{
+    height: 30px;
+    width: 150px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .split_line{
     width: 1px;
