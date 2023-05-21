@@ -38,6 +38,7 @@
             display: flex;
             justify-content: right;
             align-items: center;
+            position: relative;
             
         }
         .meau_element{
@@ -47,8 +48,45 @@
             width: 79px;
             height: 30px;
             font-size: 12px;
-            font-family:"open sans", sans-serif;
             cursor: pointer;
+        }
+        .aplus_training_dropmeau{
+            position: absolute;
+            width: 79px;
+            right:158px;
+            top:30px;
+            padding-top: 10px;
+            background-color: #00000050;
+            display: none;
+        }
+        .aplus_tools_dropmeau{
+            position: absolute;
+            width: 150px;
+            right:78px;
+            top:30px;
+            padding-top: 10px;
+            background-color: #00000050;
+            display: none;
+        }
+        .aplus_training_subelement{
+            height: 30px;
+            width: 79px;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .aplus_tools_subelement{
+            height: 30px;
+            width: 150px;
+            font-size: 12px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
         .split_line{
             width: 1px;
@@ -233,6 +271,20 @@
                         <div class="split_line"></div>
                         <div class="meau_element" id="contact_us">預約了解</div>
                     </nav>
+                    <div id="aplus_training_dropmeau" class="aplus_training_dropmeau">
+                        <div id="leadership" class="aplus_training_subelement">領導人培訓</div>
+                        <div style="width: 79px;height: 1px;background-color: white;"></div>
+                        <div id="enlightenment" class="aplus_training_subelement">深見系統</div>
+                        <div style="width: 79px;height: 1px;background-color: white;"></div>
+                        <div id="preserverance" class="aplus_training_subelement">廣行系統</div>
+                        <div style="width: 79px;height: 1px;background-color: white;"></div>
+                        <div id="liberty" class="aplus_training_subelement">律系統</div>
+                    </div>
+                    <div id="aplus_tools_dropmeau" class="aplus_tools_dropmeau">
+                        <div id="influentialwords" class="aplus_tools_subelement">有影響力的語言系列貼圖</div>
+                        <div style="width: 150px;height: 1px;background-color: white;"></div>
+                        <div id="ateamlogos" class="aplus_tools_subelement">A+ Team LOGO 賴貼圖</div>
+                    </div>
                 </div>
             </div>
             </td></tr>
@@ -243,20 +295,20 @@
         <div class="main_container">
             <div class="text_before_logos_container">系統科判</div>
             <div class="logos_container">
-                <img src="https://static.wixstatic.com/media/b4b718_36f9ff092c124e8aaba14f70eb91913e~mv2.png"></img>
+                <img id="leadership_logo" src="https://static.wixstatic.com/media/b4b718_36f9ff092c124e8aaba14f70eb91913e~mv2.png"></img>
                 <div class="logos_horizontal_line"></div>
                 <div class="logos_vertical_line">
                     <div class="logos_vertical_line_center"></div>
                 </div>
                 <div class="three_logos">
-                    <img src="https://static.wixstatic.com/media/b4b718_8dc888968cfe45d28945cbb729f3404e~mv2.png"></img>
-                    <img src="https://static.wixstatic.com/media/b4b718_3cfb423cd3ee4df29ac3cb38d8b790b0~mv2.png"></img>
-                    <img src="https://static.wixstatic.com/media/b4b718_b87dba2d5ec64fdab9e25905f907af93~mv2.png"></img>
+                    <img id="enlightenment_logo" src="https://static.wixstatic.com/media/b4b718_8dc888968cfe45d28945cbb729f3404e~mv2.png"></img>
+                    <img id="preserverance_logo" src="https://static.wixstatic.com/media/b4b718_3cfb423cd3ee4df29ac3cb38d8b790b0~mv2.png"></img>
+                    <img id="liberty_logo" src="https://static.wixstatic.com/media/b4b718_b87dba2d5ec64fdab9e25905f907af93~mv2.png"></img>
                 </div>
                 <div class="logos_vertical_line2"></div>
                 <div class="three_logos">
                     <div style="width: 252px; display:flex; justify-content: center;">
-                        <img src="https://static.wixstatic.com/media/b4b718_cec55f20572c4d28a12f94542e13a006~mv2.png" style="width: 200px;margin-top: 5px;"></img>
+                        <img id="enlightenment_logo2" src="https://static.wixstatic.com/media/b4b718_cec55f20572c4d28a12f94542e13a006~mv2.png" style="width: 200px;margin-top: 5px;"></img>
                     </div>
                     <div style="width: 252px;"></div>
                     <div style="width: 252px;"></div>
@@ -310,32 +362,61 @@
     </div>
     <div class="foot3"></div>
 </body>
+<script src="app.js"></script>
 <script type="text/javascript">
-    
-    document.getElementById("apluslogo").addEventListener('click',function(){
-        window.location.assign('index.html');
+    leadership_logo = document.getElementById("leadership_logo")
+    leadership_logo.addEventListener('click',function(){
+        window.location.assign('leadership.html')
     });
-    
-    var about_aplus = document.getElementById("about_aplus")
-    about_aplus.addEventListener('click',function(){
-        window.location.assign('index.html');
+    leadership_logo.addEventListener('mouseover',function(){
+        leadership_logo.style.background = "#efdd8d20"
     });
-    about_aplus.addEventListener('mouseover',function(){
-        about_aplus.style.color = "#efdd8d"
-    });
-    about_aplus.addEventListener('mouseout',function(){
-        about_aplus.style.color = "white"
+    leadership_logo.addEventListener('mouseout',function(){
+        leadership_logo.style.background = "none"
     });
 
-    var contact_us = document.getElementById("contact_us")
-    contact_us.addEventListener('click',function(){
-        window.location.assign('apply.html')
+    enlightenment_logo = document.getElementById("enlightenment_logo")
+    enlightenment_logo.addEventListener('click',function(){
+        window.location.assign('enlightenment.html')
     });
-    contact_us.addEventListener('mouseover',function(){
-        contact_us.style.color = "#efdd8d"
+    enlightenment_logo.addEventListener('mouseover',function(){
+        enlightenment_logo.style.background = "#efdd8d20"
     });
-    contact_us.addEventListener('mouseout',function(){
-        contact_us.style.color = "white"
+    enlightenment_logo.addEventListener('mouseout',function(){
+        enlightenment_logo.style.background = "none"
+    });
+
+    enlightenment_logo2 = document.getElementById("enlightenment_logo2")
+    enlightenment_logo2.addEventListener('click',function(){
+        window.location.assign('enlightenment.html')
+    });
+    enlightenment_logo2.addEventListener('mouseover',function(){
+        enlightenment_logo2.style.background = "#efdd8d20"
+    });
+    enlightenment_logo2.addEventListener('mouseout',function(){
+        enlightenment_logo2.style.background = "none"
+    });
+
+    preserverance_logo = document.getElementById("preserverance_logo")
+    preserverance_logo.addEventListener('click',function(){
+        window.location.assign('preserverance.html')
+    });
+    preserverance_logo.addEventListener('mouseover',function(){
+        preserverance_logo.style.background = "#efdd8d20"
+    });
+    preserverance_logo.addEventListener('mouseout',function(){
+        preserverance_logo.style.background = "none"
+    });
+
+    liberty_logo = document.getElementById("liberty_logo")
+    liberty_logo.addEventListener('click',function(){
+        window.location.assign('liberty.html')
+    });
+    liberty_logo.addEventListener('mouseover',function(){
+        liberty_logo.style.background = "#efdd8d20"
+    });
+    liberty_logo.addEventListener('mouseout',function(){
+        liberty_logo.style.background = "none"
     });
 </script>
 </html>
