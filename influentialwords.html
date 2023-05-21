@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8' name='viewport'><meta>
     <style type="text/css">
-        @import "css/style.css";
+        @import "style.css";
         .site_container{
             position:fixed;
             width: 100%;
@@ -220,6 +220,7 @@
 <script src="app.js"></script>
 </html>
 <script type ="text/javascript">
+    
     function getPosition (element) {
         var x = 0;
         var y = 0;
@@ -231,6 +232,7 @@
         }
         return { 'x': x, 'y': y };
     }
+
     window.onscroll = function() {showsticker()};
     function showsticker (){
         sticker_columns = ['','','','']
@@ -247,22 +249,6 @@
             }
         }
     }
-    //sticker00 = document.getElementById("sticker00")
-    // document.body.addEventListener('"scroll"',function(){
-    //     console.log('aaa')
-    // });
-    // fortest.addEventListener('mouseover',function(){
-    //     sticker00_img = document.getElementById("sticker00_img")
-    //     sticker00_img.style.height = "120px"
-    //     sticker00_img.style.width = "120px"
-    // });
-    // window.onscroll = function() {myFunction()};
-
-    // function myFunction() {
-    //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    //         console.log('sd')
-    //     }
-    // }
 
     sticker00 = document.getElementById("sticker00")
     sticker00.addEventListener('click',function(){
@@ -352,4 +338,12 @@ https://static.wixstatic.com/media/b4b718_65beb736244e45bf979fd9b326441c9d~mv2.p
 https://static.wixstatic.com/media/b4b718_5d3bd360ff714f4d92c9728880290510~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW14.png
 https://static.wixstatic.com/media/b4b718_b555690a33074857bcfefedd37e90260~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW15.png
 https://static.wixstatic.com/media/b4b718_b6c6e567ab9a4d27a9a507c703558e7b~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW16.png
+
+// window.onscroll = function() {myFunction()};
+
+    // function myFunction() {
+    //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    //         console.log('sd')
+    //     }
+    // }
 -->
