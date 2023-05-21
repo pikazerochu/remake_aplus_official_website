@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' name='viewport'><meta>
+    <style type="text/css">
+        @import "css/style.css";
+        .site_container{
+            position:fixed;
+            width: 100%;
+            height: 100%;
+            background-image:url("https://static.wixstatic.com/media/b4b718_126ea5b5f5ae4c61843e0029320d6b6d~mv2_d_2000_1333_s_2.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-attachment:fixed;
+            background-position:50% 50%;
+            z-index: -1;
+        }
+        .page_container{
+            height: 1330px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .center_page{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000000B0;
+            width: 980px;
+            height: 1330px;
+        }
+        .center_center_page{
+            display: flex;
+            flex-direction: column;
+            
+            width: 600px;
+            height: 1330px;
+            position: relative;
+            z-index: 0;
+        }
+        .title_in_text{
+            font-weight: bold;
+            font-size: 16px;
+            height: 24px;
+            width: 600px;
+            margin-top: 15px;
+            margin-bottom: 24px;
+            text-decoration: underline;
+            text-align: center;
+        }
+        .line_in_text{
+            font-size: 16px;
+            overflow: wrap;
+            line-height: 24px; 
+        }
+        .stickers_container{
+            width: 600px;
+            height: 570px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .stickers_subcontainer{
+            width: 570px;
+            height: 120px;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .sticker{
+            width: 120px;
+            height: 120px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .sticker>img{
+            width: 0px;
+            height: 0px;
+            transition: all 1s linear;
+            /* animation:show 1s linear;
+            animation-fill-mode:forwards;
+            animation-direction:alternate; */
+        }
+        /* @keyframes show{
+            from{
+                width: 0px;
+                height: 0px;
+            }
+            to{
+                width: 120px;
+                height: 120px;
+            }
+        }  */
+        .banner{
+            width: 288px;
+            height: 87px;
+            background-color: #058000B0;
+            position: absolute;
+            right:156px;
+            top:13px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body style="color:white;margin:0px;font-family:Microsoft JhengHei;">
+    <div class="site_container"></div>
+    <div style="width: 100px;height:1px"></div>
+    <div class="title_bar">
+        <table><tr><td>
+            <div class="apluslogo" id="apluslogo"><img src="https://static.wixstatic.com/media/b4b718_f2118f795d164f6699763a7b536274d0~mv2.png"></img></div>
+            </td><td>
+            <div class="meau_container">
+                <div class="meau">
+                    <nav>
+                        <div class="meau_element" id="about_aplus">團隊總覽</div>
+                        <div class="split_line"></div>
+                        <div class="meau_element" id="aplus_training">培訓認證</div>
+                        <div class="split_line"></div>
+                        <div class="meau_element" id="aplus_tools">輔助工具</div>
+                        <div class="split_line"></div>
+                        <div class="meau_element" id="contact_us">預約了解</div>
+                    </nav>
+                    <div id="aplus_training_dropmeau" class="aplus_training_dropmeau">
+                        <div id="leadership" class="aplus_training_subelement">領導人培訓</div>
+                        <div style="width: 79px;height: 1px;background-color: white;"></div>
+                        <div id="enlightenment" class="aplus_training_subelement">深見系統</div>
+                        <div style="width: 79px;height: 1px;background-color: white;"></div>
+                        <div id="preserverance" class="aplus_training_subelement">廣行系統</div>
+                        <div style="width: 79px;height: 1px;background-color: white;"></div>
+                        <div id="liberty" class="aplus_training_subelement">律系統</div>
+                    </div>
+                    <div id="aplus_tools_dropmeau" class="aplus_tools_dropmeau">
+                        <div id="influentialwords" class="aplus_tools_subelement">有影響力的語言系列貼圖</div>
+                        <div style="width: 150px;height: 1px;background-color: white;"></div>
+                        <div id="ateamlogos" class="aplus_tools_subelement">A+ Team LOGO 賴貼圖</div>
+                    </div>
+                </div>
+            </div>
+            </td></tr>
+        </table>
+    </div>
+    <div class="page_container">
+        <div class="center_page">
+            <div class="center_center_page">
+                <div class="banner"></div>
+                <img src="https://static.wixstatic.com/media/b4b718_03952633c8764832b0dec25f41b09e46~mv2_d_2000_1333_s_2.png"></img>
+                <div class="title_in_text">有影響力的語言系列 賴貼圖</div>
+                
+                <div class="line_in_text">A+深見系統有辦一堂教育訓練課程叫『有影響力的語言』，內容是深見系統及文獻小組的夥伴將老師在不同時期，逾百場分別不同的演講、影音和溝通紀錄等...打成逐字搞。用電腦軟體交叉比之再整理後發現差不多500多個常用詞。</div>
+                <div class="line_in_text">&ensp;</div>
+                <div class="line_in_text">大家原先是想用背的，但一般能記5-10個屬於少數，後來發現並不是那麼容易將這些內涵記住、內化在用上。因此誕生了有影響力的語言貼圖，這是為了幫大家去除“記憶”這個最大門檻而出品的賴貼圖。</div>
+                <div class="line_in_text">&ensp;</div>
+                <div class="line_in_text">原先學老師的語氣講話是一個玩笑，久而久之就變一系列了。</div>
+                <div class="line_in_text">&ensp;</div>
+                <div style="width: 600px;height: 4px;border-top:1px solid white;border-bottom: 2px solid white;"></div>
+                <div class="stickers_container">
+                    <div class="stickers_subcontainer">
+                        <div id="sticker00" class="sticker"><img id="sticker00_img" src="https://static.wixstatic.com/media/b4b718_753108dc953642709464ff6c30ce535c~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker01" class="sticker"><img id="sticker01_img" src="https://static.wixstatic.com/media/b4b718_8942b12049164b6b9bf01bdcf4018189~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker02" class="sticker"><img id="sticker02_img" src="https://static.wixstatic.com/media/b4b718_80b2096ddb984b5a9a433b70be605bc0~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker03" class="sticker"><img id="sticker03_img" src="https://static.wixstatic.com/media/b4b718_0b5dcc17b71a45ec9d16f599c3526b95~mv2.png"></img></div>
+                     </div>
+                     <div class="stickers_subcontainer">
+                        <div id="sticker10" class="sticker"><img id="sticker10_img" src="https://static.wixstatic.com/media/b4b718_ebd4072ef1dd45138dc88eb689d63d12~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker11" class="sticker"><img id="sticker11_img" src="https://static.wixstatic.com/media/b4b718_ebf753f906fa4e248036d7ce4d43b4bc~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker12" class="sticker"><img id="sticker12_img" src="https://static.wixstatic.com/media/b4b718_190e1419c5e245b6ba1ce77b49bc34ea~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker13" class="sticker"><img id="sticker13_img" src="https://static.wixstatic.com/media/b4b718_785a7c53d4c34d68bce0ee6ebf2464bb~mv2.png"></img></div>
+                     </div>
+                     <div class="stickers_subcontainer">
+                        <div id="sticker20" class="sticker"><img id="sticker20_img" src="https://static.wixstatic.com/media/b4b718_94cc31e4dc9343a998f946dea87401e1~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker21" class="sticker"><img id="sticker21_img" src="https://static.wixstatic.com/media/b4b718_8134931c119e49b485cbe98dddae6b5f~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker22" class="sticker"><img id="sticker22_img" src="https://static.wixstatic.com/media/b4b718_ffa492c9525f443fb808468847297d47~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker23" class="sticker"><img id="sticker23_img" src="https://static.wixstatic.com/media/b4b718_0022102dcdec4adfa2ce49997930485b~mv2.png"></img></div>
+                     </div>
+                     <div class="stickers_subcontainer">
+                        <div id="sticker30" class="sticker"><img id="sticker30_img" src="https://static.wixstatic.com/media/b4b718_65beb736244e45bf979fd9b326441c9d~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker31" class="sticker"><img id="sticker31_img" src="https://static.wixstatic.com/media/b4b718_5d3bd360ff714f4d92c9728880290510~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker32" class="sticker"><img id="sticker32_img" src="https://static.wixstatic.com/media/b4b718_b555690a33074857bcfefedd37e90260~mv2.png"></img></div>
+                        <div style="width: 30px;"></div>
+                        <div id="sticker33" class="sticker"><img id="sticker33_img" src="https://static.wixstatic.com/media/b4b718_b6c6e567ab9a4d27a9a507c703558e7b~mv2.png"></img></div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot1">
+        <I>A Lifetime spent helping people succeed is a good life.</I>
+    </div>
+    <div class="foot2">
+        <div class="foot2_1">
+            <div class="foot2_1_1">成立於2015 © 般若來集成工程有限公司版權所有</div>
+            <div class="foot2_1_2">
+                <a href="https://lin.ee/catU3D2"><img src="https://static.wixstatic.com/media/b4b718_22c98e68e7674b32808997556e67b04b~mv2.png" style="margin-right: 10px;width: 20px;height: 20px;"><img></a>
+                <a href="https://www.facebook.com/APlusTeamOfficial"><img src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png" style="margin-right: 10px;width: 20px;height: 20px;"><img></a>
+                <a href="https://www.instagram.com/_aplusteam/"><img src="https://static.wixstatic.com/media/9f9c321c774844b793180620472aa4f1.png" style="margin-right: 10px;width: 20px;height: 20px;"><img></a>
+                <a href="https://twitter.com/intent/tweet?text=%E9%A0%90%E7%B4%84A%2BTEAM%E8%A7%A3%E8%AA%AA%E5%B0%88%E5%93%A1%E4%BA%86%E8%A7%A3%E5%88%B6%E5%BA%A6%3A%0Awww.a-plus-team.com/apply"><img src="https://static.wixstatic.com/media/9c4b521dd2404cd5a05ed6115f3a0dc8.png" style="margin-right: 10px;width: 20px;height: 20px;"><img></a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=www.a-plus-team.com/apply&title=%E9%A0%90%E7%B4%84A%2BTEAM%E8%A7%A3%E8%AA%AA%E5%B0%88%E5%93%A1%E4%BA%86%E8%A7%A3%E5%88%B6%E5%BA%A6&summary=&source="><img src="https://static.wixstatic.com/media/48a2a42b19814efaa824450f23e8a253.png" style="margin-right: 10px;width: 20px;height: 20px;"><img></a>
+            </div>
+        </div>
+    </div>
+    <div class="foot3"></div>
+</body>
+<script src="app.js"></script>
+</html>
+<script type ="text/javascript">
+    function getPosition (element) {
+        var x = 0;
+        var y = 0;
+        // 搭配上面的示意圖可比較輕鬆理解為何要這麼計算
+        while ( element ) {
+            x += element.offsetLeft - element.scrollLeft + element.clientLeft;
+            y += element.offsetTop - element.scrollLeft + element.clientTop;
+            element = element.offsetParent;
+        }
+        return { 'x': x, 'y': y };
+    }
+    window.onscroll = function() {showsticker()};
+    function showsticker (){
+        sticker_columns = ['','','','']
+        sticker_columns[0] = getPosition(document.getElementById("sticker00"))['y']
+        sticker_columns[1] = getPosition(document.getElementById("sticker10"))['y']
+        sticker_columns[2] = getPosition(document.getElementById("sticker20"))['y']
+        sticker_columns[3] = getPosition(document.getElementById("sticker30"))['y']
+        for (var i=3;i>=0;i--){
+            if (document.documentElement.scrollTop+window.innerHeight>sticker_columns[i]){
+                for (var j=0;j<4;j++){
+                    document.getElementById('sticker'+i.toString()+j.toString()+'_img').style.width="120px"
+                    document.getElementById('sticker'+i.toString()+j.toString()+'_img').style.height="120px"
+                }
+            }
+        }
+    }
+    //sticker00 = document.getElementById("sticker00")
+    // document.body.addEventListener('"scroll"',function(){
+    //     console.log('aaa')
+    // });
+    // fortest.addEventListener('mouseover',function(){
+    //     sticker00_img = document.getElementById("sticker00_img")
+    //     sticker00_img.style.height = "120px"
+    //     sticker00_img.style.width = "120px"
+    // });
+    // window.onscroll = function() {myFunction()};
+
+    // function myFunction() {
+    //     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    //         console.log('sd')
+    //     }
+    // }
+
+    sticker00 = document.getElementById("sticker00")
+    sticker00.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10733485')
+    });
+    sticker01 = document.getElementById("sticker01")
+    sticker01.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510547')
+    });
+    sticker02 = document.getElementById("sticker02")
+    sticker02.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510548')
+    });
+    sticker03 = document.getElementById("sticker03")
+    sticker03.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510555')
+    });
+    sticker10 = document.getElementById("sticker10")
+    sticker10.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510553')
+    });
+    sticker11 = document.getElementById("sticker11")
+    sticker11.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510558')
+    });
+    sticker12 = document.getElementById("sticker12")
+    sticker12.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510574')
+    });
+    sticker13 = document.getElementById("sticker13")
+    sticker13.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510569')
+    });
+    sticker20 = document.getElementById("sticker20")
+    sticker20.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510598')
+    });
+    sticker21 = document.getElementById("sticker21")
+    sticker21.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510580')
+    });
+    sticker22 = document.getElementById("sticker22")
+    sticker22.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510589')
+    });
+    sticker23 = document.getElementById("sticker23")
+    sticker23.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10528328')
+    });
+    sticker30 = document.getElementById("sticker30")
+    sticker30.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510604')
+    });
+    sticker31 = document.getElementById("sticker31")
+    sticker31.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510611')
+    });
+    sticker32 = document.getElementById("sticker32")
+    sticker32.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510618')
+    });
+    sticker33 = document.getElementById("sticker33")
+    sticker33.addEventListener('click',function(){
+        window.location.assign('https://line.me/S/sticker/10510622')
+    });
+    
+</script>
+<!-- 
+https://static.wixstatic.com/media/b4b718_03952633c8764832b0dec25f41b09e46~mv2_d_2000_1333_s_2.png/v1/fill/w_1200,h_800,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/IW_Main.png
+
+https://static.wixstatic.com/media/b4b718_753108dc953642709464ff6c30ce535c~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW1.png
+https://static.wixstatic.com/media/b4b718_8942b12049164b6b9bf01bdcf4018189~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW2.png
+https://static.wixstatic.com/media/b4b718_80b2096ddb984b5a9a433b70be605bc0~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW3.png
+https://static.wixstatic.com/media/b4b718_0b5dcc17b71a45ec9d16f599c3526b95~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW4.png
+
+https://static.wixstatic.com/media/b4b718_ebd4072ef1dd45138dc88eb689d63d12~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW5.png
+https://static.wixstatic.com/media/b4b718_ebf753f906fa4e248036d7ce4d43b4bc~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW6.png
+https://static.wixstatic.com/media/b4b718_190e1419c5e245b6ba1ce77b49bc34ea~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW7.png
+https://static.wixstatic.com/media/b4b718_785a7c53d4c34d68bce0ee6ebf2464bb~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW8.png
+
+https://static.wixstatic.com/media/b4b718_94cc31e4dc9343a998f946dea87401e1~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW9.png
+https://static.wixstatic.com/media/b4b718_8134931c119e49b485cbe98dddae6b5f~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/main.png
+https://static.wixstatic.com/media/b4b718_ffa492c9525f443fb808468847297d47~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW11.png
+https://static.wixstatic.com/media/b4b718_0022102dcdec4adfa2ce49997930485b~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW12.png
+
+https://static.wixstatic.com/media/b4b718_65beb736244e45bf979fd9b326441c9d~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW13.png
+https://static.wixstatic.com/media/b4b718_5d3bd360ff714f4d92c9728880290510~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW14.png
+https://static.wixstatic.com/media/b4b718_b555690a33074857bcfefedd37e90260~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW15.png
+https://static.wixstatic.com/media/b4b718_b6c6e567ab9a4d27a9a507c703558e7b~mv2.png/v1/fill/w_240,h_240,al_c,q_85,enc_auto/IW16.png
+-->
